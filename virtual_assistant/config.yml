@@ -14,7 +14,7 @@ pipeline:
   cache_dir: null
 
 - name: DIETClassifier
-  epochs: 1
+  epochs: 4
   transformer_size: 32
   number_of_transformer_layers: 1
   use_masked_language_model: false
@@ -24,7 +24,7 @@ pipeline:
 
 - name: EntitySynonymMapper
 - name: ResponseSelector
-  epochs: 1
+  epochs: 3
 
 policies:
 - name: MemoizationPolicy
